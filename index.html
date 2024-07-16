@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas Nacional</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="conversor">
+        <h1>Conversor de monedas Nacional</h1>
+        <input type="number" id="valor" placeholder="Pesos CLP">
+        <select id="moneda">
+            <option value="dolar">Dólar</option>
+            <option value="euro">Euro</option>
+        </select>
+        <button onclick="transformValue()">Buscar</button>
+        <div id="resultado">Resultado:</div>
+    </div>
+    <div id="grafico"></div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
