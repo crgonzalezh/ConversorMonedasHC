@@ -26,7 +26,7 @@ const transformValue = async function () {
     const moneda = document.querySelector('#moneda').value;
     const tasaCambio = data[moneda].valor;
     const valorConvertido = valor / tasaCambio;
-    document.querySelector('#resultado').textContent = `El valor es: ${valorConvertido.toFixed(2)}`;
+    document.querySelector('#resultado').textContent = `Resultado: ${valorConvertido.toFixed(2)}`;
     
     await graficar(moneda);
 }
